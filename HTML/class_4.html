@@ -1,0 +1,104 @@
+<!--form-->
+<form action="#" autocomplete="off">
+  <input type="text"/>
+  <input type="submit"/>
+</form>
+
+<!--label-->
+<form action="#">
+  Email <input type="text"/> <br>
+   <label for="useId">I &nbsp; &nbsp; &nbsp;D</label>  <input type="text" id="userId"/> <br>
+<!--   <label>password <input type="password" id=userPw></</label> -->
+  </form>
+</form>
+
+<!--label checkbox radio-->
+<form>
+  <ul>
+      <li><input type= "checkbox"/>Korean</li>
+      <li><input type= "checkbox"/>English</li>
+  </ul>
+  <ul>
+      <li><label><input type="checkbox"/>Polski</label></li>
+      <li><label><input type="checkbox"/>French</label></li>
+  </ul>
+  <ul>
+      <li><input type="radio" id="kor" name="lang"/><label for=kor">coreano</label></li>
+      <li><input type="radio" id=eng name=lang/><label for=eng>angielski</label></li>
+  </ul>
+</form>
+
+<!--fieldset legend-->
+<form>
+  <fieldset>
+    <legend>need</legend>
+    <label>name<input type="text"/></label>
+    <label>number<input type="tel"/></label>
+  </fieldset
+  <fieldset>
+    <legend>choose</legend>
+    <label>address <input type="text"/></label>
+  </fieldset>
+</form>
+
+<!--input type-->
+<form>
+  <ul>
+      <li><input type="hidden"/></li>
+      <li><input type = "text"/></li>
+      <li><input type = "password"/></li>
+      <li><input type = "search"/></li>
+      <li><input type = "url"/></li>
+      <li><input type = "Email"/></li>
+      <li><input type = "tel"/></li>
+      <li><input type = "number"/></li>
+      <li><input type = "range"/></li>
+      <li><input type = "radio"/></li>
+      <li><input type = "checkbox"/></li>
+      <li><input type = "color"/></li>
+      <li><input type = "date"/></li>
+      <li><input type = "time"/></li>
+      <li><input type = "datetime-local"/></li>
+      <li><input type = "submit"/></li>
+      <li><input type = "reset"/></li>
+      <li><input type = "image" src=0.jpg/></li>
+      <li><input type = "button"/></li>
+      <li><input type = "file"/></li>
+  </ul>
+</form>
+
+<!--textarea-->
+  <textarea name ="intro" cols=60 rows =5>
+    stay hungry,
+    stay foolish.
+  </textarea>
+
+<!--input attribute-->
+<form>
+  <input type = "text" name="userId" id="userId" size=5/><br>
+  <input type = "text" value="how" readonly/><br>
+  <input type = "text" placeholder="password"/> <br>
+  <input type = "text" autofocus/> <br>
+  <input type = "text" minlength =3 maxlength=10 required/><br>
+  <input type = "number" min =1 max=10 step=2/><br>
+  <input type = "date" value="2020-03-20" min="2020-03-01" max="2020-04-20"/><br>
+  <input type = "time" min ="09:00" max="13:00"/><br>
+  <input type = "submit" value="submit"/><br>
+  <input type = "image" src="map.png" width=40 height=25/><br>
+  <input type = "submit" formaction="#" formmethod="post" formtarget="msg"/><br>
+  <input type = "file" multiple/>
+</form>
+
+<!--output-->
+<form oninput="result.value=parseInt(num1.value)+parseInt(num2.value)">
+  <input type="number" name="num1" value=0>
+  +<input type="number" name="num2" value=0>
+  =<output name = "result"></output>
+</form>
+
+
+<!--progress meter-->
+  <progress value=30 max=100></progress> <br>
+  <meter value=0.8></meter>
+  <meter value=60 min=0 max=100></meter>
+  <meter value=0.2 low=0.3 high=0.9 optimum=0.7.</meter>

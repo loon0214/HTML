@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<title>Bootstrap</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+</head>
+<body>
+<div class='container'>
+   <h2>Basic List Group</h2>
+   <ul class='list-group'>
+      <li class='list-group-item'>Jeden</li>
+      <li class='list-group-item'>Dwa</li>
+      <li class='list-group-item'>Trzy</li>
+   </ul>
+
+   <h2>List Group with Badges</h2>
+   <ul class='list-group'>
+      <li class='list-group-item'><span class='badge'>1</span>New</li>
+      <li class='list-group-item'><span class='badge'>2</span>Deleted</li>
+      <li class='list-group-item'><span class='badge'>3</span>Warning</li>
+   </ul>
+
+   <h2>List Group with Linked items</h2>
+      <div class='list-group'>
+      <a href='#' class='list-group-item active'>1</a>
+      <a href='#' class='list-group-item disabled'>2</a>
+      <a href='#' class='list-group-item'>3</a>
+   </div>
+
+   <h2>List Group with Contextual Classes</h2>
+   <ul class='list-group'>
+      <a class='list-group-item list-group-item-danger'>1</a>
+      <a class='list-group-item list-group-item-warning'>2</a>
+      <a class='list-group-item list-group-item-success'>3</a>
+   </ul>
+</div>
+
+</body>
+</html>
+<!--
+to create a basic list group, use an <ul> element with class .list-group,
+and <li> elements with class .list-group-item
+to create a badge, create a <span> element with class .badge inside the list item.
+the items in a list group can also be hyperlinks. this will add a grey background color on hover.
+to create a list group with linked items, use <div> instead of <ul> and <a> instead of <li>.
+use the .active class to highlight the current item.
+tp disabl an item, add the .disabled class.
+you can add nearly any HTML inside a list group item.
+Bootstrap provides the classes .list-group-item-heading
+and .list-group-item-text which can be used.
+ -->

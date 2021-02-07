@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<title>Bootstrap</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+</head>
+<body>
+<div class='container'>
+   <h2>Button Collapsible</h2>
+   <button type='button' class='btn btn-info'
+   data-toggle='collapse' data-target='#demo'>Simple collapsible</button>
+   <div id='demo' class='collapse'>
+   HTML (HyperText Markup Language) is the most basic building block of the Web. It defines the meaning and structure of web content.
+   Other technologies besides HTML are generally used to describe a web page's appearance/presentation (CSS) or functionality/behavior (JavaScript).
+   </div>
+
+   <h2>A Collapsible</h2>
+   <a href='#demo2' class='btn btn-info'
+   data-toggle='collapse'>Simple collapsible</a>
+   <div id='demo2' class='collapse in'>
+   HTML (HyperText Markup Language) is the most basic building block of the Web. It defines the meaning and structure of web content.
+   Other technologies besides HTML are generally used to describe a web page's appearance/presentation (CSS) or functionality/behavior (JavaScript).
+   </div>
+
+   <h2>Collapsible Panel</h2>
+   <div class='panel-group'>
+      <div class='panel panel-default'>
+         <div class='panel-heading'>
+            <h4 class='panel-title'>
+               <a data-toggle='collapse' href='#collapse1'>title</a>
+            </h4>
+         </div>
+         <div id='collapse1' class='panel-collapse collapse'>
+            <div class='panel-body'>body</div>
+            <div class='panel-footer'>footer</div>
+         </div>
+      </div>
+   </div>
+
+   <h2>Collapsible List Group</h2>
+   <div class='panel-group'>
+      <div class='panel panel-default'>
+         <div class='panel-heading'>
+            <h4 class='panel-title'>
+               <a data-toggle='collapse' href='#collapse2'>
+               Collapsible list group</a>
+            </h4>
+         </div>
+         <div id='collapse2' class='panel-collapse collapse'>
+            <ul class='list-group'>
+               <li class='list-group-item'>1</li>
+               <li class='list-group-item'>2</li>
+               <li class='list-group-item'>3</li>
+            </ul>
+            <div class='panel-footer'>footer</div>
+         </div>
+      </div>
+   </div>
+
+   <h2>Accordion</h2>
+   <div class='panel-group' id='accordion'>
+      <div class='panel panel-default'>
+         <div class='panel-heading'>
+            <h4 class='panel-title'>
+               <a data-toggle='collapse'
+               data-parent='#accordion' href='#c1'>HTML</a>
+            </h4>
+         </div>
+         <div id='c1' class='panel-collapse collapse'>
+            <div class='panel-body'>
+            HTML (HyperText Markup Language) is the most basic building block of the Web. It defines the meaning and structure of web content.
+            Other technologies besides HTML are generally used to describe a web page's appearance/presentation (CSS) or functionality/behavior (JavaScript).</div>
+         </div>
+      </div>
+      <div class='panel panel-default'>
+         <div class='panel-heading'>
+            <h4 class='panel-title'>
+               <a data-toggle='collapse' data-parent='#accordion'
+               href='#c2'>CSS</a>
+            </h4>
+         </div>
+         <div id='c2' class='panel-collapse collapse'>
+            <div class='panel-body'>
+            CSS" redirects here. For other uses, see CSS (disambiguation).
+         "Pseudo-element" redirects here. For pseudoelement symbols in chemistry, see Skeletal formula § Pseudoelement symbols.
+         For the use of CSS on Wikipedia, see Help:Cascading Style Sheets.</div>
+         </div>
+        </div>
+         <div class='panel panel-defualt'>
+            <div class='panel-heading'>
+               <h4 class='panel-title'>
+                  <a data-toggle='collapse' data-parent='#accordion'
+                  href='#c3'>JavaScript</a>
+               </h4>
+            </div>
+           <div id='c3' class='panel-collapse collapse'>
+               <div class='panel-body'>
+                 JavaScript (/ˈdʒɑːvəˌskrɪpt/),[6] often abbreviated as JS, is a programming language that conforms to the ECMAScript specification.[7] JavaScript is high-level, often just-in-time compiled, and multi-paradigm. It has curly-bracket syntax, dynamic typing, prototype-based object-orientation, and first-class functions.
+            Alongside HTML and CSS, JavaScript is one of the core technologies of the World Wide Web.[8] JavaScript enables interactive web pages and is an essential part of web applications. The vast majority of websites use it for client-side page behavior,[9] and all major web browsers have a dedicated JavaScript engine to execute it.
+            As a multi-paradigm language, JavaScript supports event-driven, functional, and imperative programming styles. It has application programming interfaces (APIs) for working with text, dates, regular expressions, standard data structures, and the Document Object Model (DOM). However, the language itself does not include any input/output (I/O), such as networking, storage, or graphics facilities, as the host environment (usually a web browser) provides those APIs.
+            riginally used only in web browsers, JavaScript engines are now embedded in server-side website deployments, often via Node.js. They are also embedded in a variety of applications created with frameworks such as Electron and Cordova.
+            Although there are similarities between JavaScript and Java, including language name, syntax, and respective standard libraries, the two languages are distinct and differ greatly in design</div>
+           </div>
+        </div>
+      </div>
+</div>
+</body>
+</html>
+
+<!--
+collapsibles are useful when you want to hide and show large amount of content.
+the .collapse class indicates a collasible element (a <div> in our example);
+this is the content that will be shown or hidden with a click of a button.
+to control (show/hide) the collpasible content,
+add the data-toggle='collpase' attribute to and <a> or a <button> element.
+then add the data-target='#id' attribute to connect the button with the collapsible content (<div id='demo'>)
+for <a> elements, you can use the href attribute instead of the data-target attribute/
+By default, the collapsible content is hidden.
+however, you can add the .in class to show the content by default/
+use the data-parent attribute to make sure that all collapsible elements
+under the specified parent will be closed when one of the collapsible item is shown.
+
+ -->

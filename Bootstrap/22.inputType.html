@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<title>Bootstrap</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+</head>
+<body>
+<div class='container'>
+   <h2>input</h2>
+   <form>
+      <div class='forn-group'>
+         <label for='userName'>imie </label>
+         <input type='text' id='userName' class='form-control'/>
+      </div>
+      <div class='form-group'>
+         <label for='pwd'>halso</label>
+         <input type='password' id='pwd' class='form-control'/>
+      </div>
+      <div class='form-group'>
+         <label for='comment'>Komentarz: </label>
+         <textarea id='comment' rows='5' class='form-control'/>
+         </textarea>
+      </div>
+   </form>
+
+   <h2>check box</h2>
+   <form>
+      <div class='checkbox'>
+         <label><input type='checkbox'> jabka</label>
+      </div>
+      <div class='checkbox'>
+         <label><input type='checkbox'> banana</label>
+      </div>
+      <div class='checkbox'>
+         <label><input type='checkbox' disabled> truskawka</label>
+      </div>
+   </form>
+   <br>
+
+   <form>
+      <label class='checkbox-inline'>
+         <input type='checkbox'> jabka
+      </label>
+      <label class='checkbox-inline'>
+         <input type='checkbox'> banana
+      </label>
+      <label class='checkbox-inline'>
+         <input type='checkbox'> truskawka
+      </label>
+   </form>
+
+   <h2>radio</h2>
+   <form>
+      <div class='radio'>
+         <label><input type='radio'> jabka</label>
+      </div>
+      <div class='radio'>
+         <label><input type='radio'> banana</label>
+      </div>
+      <div class='radio' disabled>
+         <label><input type='radio' disabled> truskawka</label>
+      </div>
+   </form>
+   <br>
+
+   <form>
+      <label class='radio-inline'><input type='radio'> jabka</label>
+      <label class='radio-inline'><input type='checkbox'> banana</label>
+      <label class='radio-inline'><input type='radio'> truskawka</label>
+   </form>
+
+   <h2>select</h2>
+   <form>
+      <div class='form=group'>
+         <label for='fruits'>Apple</label>
+         <select class='form-control' id='fruit'>
+            <option>iPhone</option>
+            <option>iPad</option>
+            <option>iMac</option>
+         </select>
+      </div>
+
+      <h3>Static control</h3>
+      <form class='form-horizontal'>
+         <div class='form-group'>
+            <label class='control-label col-sm-2'>Email</label>
+         <div class='col-sm-10'>
+            <p class='form-control-static'>hello@world.com</p>
+         </div>
+         </div>
+      </form>
+
+   <h3>control states</h3>
+   <form class='form-horizontal'>
+      <div class='form-group'>
+         <label class='col-sm-2 control-label'>ID: </label>
+         <div class='col-sm-10'>
+            <input type='text' class='form-control' autofocus/>
+         </div>
+      </div>
+      <div class='form-group'>
+         <label class='col-sm-2 control-label'>haslo: </label>
+         <div class='col-sm-10'>
+            <input type='password' class='form-control'/>
+         </div>
+      </div>
+
+      <fieldset disabled>
+         <div class='form-group'>
+            <label class='col-sm-2 control-label'>ID: </label>
+            <div class='col-sm-10'>
+               <input type='text' class='form-control' autofocus/>
+         </div>
+      </div>
+      <div class='form-group'>
+         <label class='col-sm-2 control-label'>haslo: </label>
+         <div class='col-sm-10'>
+            <input type='password' class='form-control'/>
+         </div>
+      </div>
+      </fieldset>
+
+      <div class='form-group has-feedback has-success'>
+         <label class='col-sm-2 control-label'>ID: </label>
+         <div class='col-sm-10'>
+            <input type='text' class='form-control'/>
+            <span class='glyphicon glyphicon-ok form-control-feedback'>
+            </span>
+         </div>
+      </div>
+      <div class='form-group has-feedback has-error'>
+         <label class='col-sm-2 control-label'>haslo: </label>
+         <div class='col-sm-10'>
+            <input type='password' class='form-control'/>
+            <span class='glyphicon glyphicon-remove form-control-feedback'>
+            </span>
+         </div>
+      </div>
+
+      </form>
+
+</div>
+</body>
+</html>
+<!--
+Bootstrap supports the following form controls:
+input textarea checkbok radio select
+
+Input focus - the outline of the input is removed and a box-shadow is appied on focus
+Disabled inputs - Add a disabled attribute to disable an input field
+Disabled fieldsets - add a disabled attribute to a fieldset to disable all controls within
+Readomly inputs - add a readomly attribute to an input to prevent user input
+Validation states - Bootstrap includes validation styles for error, warningm and success messages.
+to use, add.has-warning, .has-error, or .has-success to the parent element
+Icons - You can add feedback icons with the .has-feedback class and an icon
+Hidden labels - add a .sr-only class on non-visible labels
+ -->

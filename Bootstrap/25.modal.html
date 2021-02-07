@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<title>Bootstrap</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+</head>
+<body>
+<div class='container'>
+   <h2>Modal</h2>
+   <!--  tigger the modal with a button -->
+   <button type='button class='btn btn-info btn-lg' data-toggle='modal'
+   data-target='#myModal'>Open Modal</button>
+      <!--  Modal  -->
+      <div class='modal fade' id="myModal">
+         <div class='modal-dialog'>
+            <!-- Modal content -->
+            <div class='modal-content'>
+               <div class='modal-header'>
+                  <button type='button' class='close' data-dismiss='modal'>X</button>
+                  <h4 class='modal-title'>Title</h4>
+               </div>
+               <div class='modal-body'>
+                  <p>body content</p>
+               </div>
+               <div class='modal-footer'>
+                  <button type='button' class='btn btn-default' data-dismiss='modal'>Close</button>
+               </div>
+            </div>
+         </div>
+      </div>
+
+      <h2>Small Modal</h2>
+      <!--  Trigger the modal with a button -->
+      <button type='button' class='btn btn-info btn-lg' data-toggle='modal' data-target='#mySmallModal'>Open Small Modal</button>
+
+      <!-- Modal -->
+      <div class='modal fade' id='mySmallModal'>
+         <div class='modal-dialog modal-sm'> <!-- modal-lg -->
+            <div class='modal-content'>
+               <div class='modal-header'>
+                  <button type='button' class='close' data-dismiss='modal'>&times</button>
+                  <h4 class='modal-title'>Title</h4>
+               </div>
+               <div class='modal-body'>
+                  <p>body</p>
+               </div>
+               <div class='modal-footer'>
+                  <button type='button' class='btn btn-default' data-dismiss='modal'>Close</button>
+               </div>
+            </div>
+         </div>
+      </div>
+</div>
+</body>
+</html>
+<!--
+the "trigger' part:
+to trigger the modal window, you need to use a button or a link/
+then include the two data-* attributes:
+data-toggle='modal' opens the modal window
+data-target='#myModal' points to the id of the modal
+the 'modal' part:
+the parent <div> of the modal must have an ID that is the same
+as the value of the data-target attribute used to trigger the modal ("myModal")
+the .modal class identifies the content of <div> as a modal and brings focus to it.
+the .fade class adds a transition effect which fades the modal in and out.
+Remove this class if you do not want this effect.
+the .modal-dialog class sets the proper width and margin of the modal.
+the "modal content" part:
+the <div> with class='modal-content' styles the n odal (border, background-color, etc.)
+inside this <div>, add the modal's header, body, and footer.
+the .modal-header class is used to define the style for the header of the modal/
+the <button> inside the header has a data-dismiss='modal' attribute
+which closes the modal if you click on it
+the .close class tyles the close button, and the
+.modal-title class style the header with a proper line-height.
+the .modal-bod class is used to define the stlye for the body of the modal.
+add any HTML markup herel paragraphs, images, videos, etc/
+the .modal-footer class is used to define the style for the footer of the modal.
+note that this aread is right aligned by default.
+ -->

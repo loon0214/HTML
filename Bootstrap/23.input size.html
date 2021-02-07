@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<title>Bootstrap</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+</head>
+<body>
+   <div class='container'>
+   <h2>Input Sizing</h2>
+   <form>
+      <div class='form-group'>
+         <label for='default'>Default input</label>
+         <input class='form-control' id='default' type='text'>
+      </div>
+
+      <div class='form-group'>
+         <label for='inputlg'>input-lg</label>
+         <input class='form-control input-lg' id='inputlg' type='text'>
+      </div>
+
+      <div class='form-group'>
+         <label for='md'>Default select list</label>
+         <select class='form-control input-md' id='md'>
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+         </select>
+      </div>
+   </form>
+
+   <form class='form-horizontal'>
+      <div class='form-group form-group-sm'>
+         <label class='col-sm-2 control-label' for='sm'>form-group-sm</label>
+         <div class='col-sm-10'>
+            <input class='form-control' type='text' id='sm'>
+         </div>
+      </div>
+   </form>
+
+   <h2>Column Sizing</h2>
+   <form>
+      <div class='form-group'>
+         <div class='col-xs-2'>
+            <label for='ex1'>1</label>
+            <input class='form-control' id='ex1' type='text'>
+         </div>
+         <div class='col-xs-3'>
+            <label for='ex2'>2</label>
+            <input class='form-control' id='ex2' type='text'>
+         </div>
+         <div class='col-xs-7'>
+            <label for='ex3'>3</label>
+            <input class='form-control' id='ex3' type='text'>
+         </div>
+      </div>
+   </form>
+
+   <h2>Help text</h2>
+   <form>
+      <div class='form-group'>
+         <label for='pwd'>haslo</label>
+         <input type='password' class='form-control' id='pwd' placeholder='Enter password'>
+         <span class='help-block'>co robisz</span>
+      </div>
+      <button type='submit' class='btn btn-default'>Submit</button>
+   </form>
+   </div>
+</body>
+</html>
+<!--
+Set the heights of input elements using classes like .input-lg and .input-sm.
+Set the widths of elements using grid column classes like .col-lg-*and .col-sm-*.
+a horizontal form by adding .form-group-* to the <div class='form-group'> element.
+shows input elements with different widths using different .col-xs-* classes.
+.help-block class to add a block level help text in forms
+-->

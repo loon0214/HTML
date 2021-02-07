@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<title>Bootstrap</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+<div class='container'>
+   <h2>Dropdown Menu</h2>
+   <div class='dropdown'>
+      <button class='btn btn-default dropdown-toggle'
+      data-toggle='dropdown'>jezyk<span class='caret'></span>
+      </button>
+      <ul class='dropdown-menu'>
+         <li class='dropdown-header'>Front-End</li>
+         <li><a href='#'>HTML</a></li>
+         <li><a href='#'>CSS</a></li>
+         <li><a href='#'>Javascript</a></li>
+         <li class='divider'></li>
+         <li class='dropdown-header'>Back-End</li>
+         <li><a href='#'>JAVA</a></li>
+         <li><a href='#'>SWIFT</a></li>
+         <li><a href='#'>phython</a></li>
+         <li><a href='#'>C#</a></li>
+         <li><a href='#'>R</a></li>
+      </ul>
+   </div>
+</div>
+
+</body>
+</html>
+<!--
+a dropdown menu is a toggleable menu that allows the user to
+choose one value from a predefined list.
+the .dropdown class indicates a dropdown menu.
+to open the dropdown menu, use a button or a link with
+a class of .dropdown-toggle and the data-toggle='dropdown' attribute.
+the .caret class creates a caret arrow icon (), which indicates
+that the button is a dorpdown.
+Add the .dropdown-menu class to a <ul> element to actually build
+the dropdown menu.
+The .divider class is used to separate links inside the dropdown menu
+with a thin horizontal border.
+the .dropdown-header class is to add headers inside the dropdown menu.
+to disable an item in the dropdown menu, use the .disabled class.
+ -->

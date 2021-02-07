@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<title>Bootstrap</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+</head>
+<body>
+<div class="container">
+   <!-- img-rounded class adds rounded corners to an image -->
+   <h2>Rounded Corners</h2> <!-- 모서리가 둥근 사각형 -->
+   <img src="0.jpg" class="img-rounded" width="200" height="200">
+
+   <!--
+   img-responsive class applies display:
+   block;
+   max-width: 100%;
+   height: auto;
+   to the image
+    -->
+   <h2>Responsive Image</h2> <!-- 반응형 이미지 -->
+   <img src="0.jpg" class="img-responsive" width="200" height="200">
+
+   <!-- img-circle class shapes the image to a circle -->
+   <h2>Circle</h2>
+   <img src="0.jpg" class="img-circle" width="150" height="150">
+
+   <!-- thumbnail class shapes the image to a thumbnail  -->
+   <h2>thumbnail</h2>
+   <img src="0.jpg" class="img-thumbnail" width="200" height="200">
+
+   <!--
+   use Bootstrap's grid system in conjunction
+   with the thumbnail class to create an image gallery -->
+   <h2>Image Gallery</h2>
+   <div class="row">
+      <div class="col-sm-4">
+         <a href="0.jpg" class="thumbnail">
+            <img src="0.jpg" style="width:150px; height:150px">
+         </a>
+      </div>
+      <div class="col-sm-4">
+         <a href="0.jpg" class="thumbnail">
+            <img src="0.jpg" style="width:150px; height:150px">
+         </a>
+      </div>
+      <div class="col-sm-4">
+         <a href="0.jpg" class="thumbnail">
+            <img src="0.jpg" style="width:150px; height:150px">
+         </a>
+      </div>
+   </div>
+
+   <!--
+   creates a responsive video by adding an embed-responsive-item
+   class to and <iframe> tag
+   (the video will then scale nicely to the parent element)
+   the containing <div> defines the aspect ratio of the video
+   the aspect ratio of an image describes the proportional relationship
+   between its width and its height: 16by9, 4by3
+    -->
+   <h2>Responsive Embed</h2>
+   <div class="embed-responsive embed-responsive-16by9">
+      <iframe class="embed-responsive-item"
+         src="https://www.youtube.com/embed/mZrgfQbvhcU"
+         width="500" height="300"></iframe>
+   </div>
+</div>
+</body>
+</html>

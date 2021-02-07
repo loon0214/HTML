@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<title>Bootstrap</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+</head>
+<body>
+<div class='container'>
+   <h3>Inline List</h3>
+   <ul class='list-inline'>
+      <li><a href='#'>Home</a></li>
+      <li><a href='#'>Menu1</a></li>
+      <li><a href='#'>Menu2</a></li>
+      <li><a href='#'>Menu3</a></li>
+   </ul>
+
+   <br>
+
+   <h3>Tabs</h3>
+   <ul class='nav nav-tabs'>
+      <li class='active'><a href='#'>Home</a></li>
+      <li><a href='#'>Menu1</a></li>
+      <li><a href='#'>Menu2</a></li>
+      <li><a href='#'>Menu3</a></li>
+   </ul>
+
+   <br>
+
+   <h3>Apple</h3>
+   <ul class='nav nav-tabs'>
+      <li class='active'><a href='#'>Home</a></li>
+      <li><a href='#'>Mac</a></li>
+      <li><a href='#'>iPad</a></li>
+      <li class='dropdown'>
+         <a class='dropdown-toggle' data-toggle='dropdown'
+         href='#'>iPhone<span class='caret'></span></a>
+      <ul class='dropdown-menu'>
+         <li><a href='#'>iPhoneX</a></li>
+         <li><a href='#'>iPhone8</a></li>
+         <li><a href='#'>iPhone+</a></li>
+      </ul>
+      </li>
+   </ul>
+
+   <h3>Pills</h3>
+   <ul class='nav nav-pills'>
+      <li class='active'><a href='#'>Home</a></li>
+      <li><a href='#'>Mac</a></li>
+      <li><a href='#'>iPad</a></li>
+      <li><a href='#'>iPhone</a></li>
+   </ul>
+
+   <br>
+   <br>
+
+   <ul class='nav nav-pills'>
+      <li class='active'><a href='#'>Home</a></li>
+      <li><a href='#'>Mac</a></li>
+      <li><a href='#'>iPad</a></li>
+      <li>
+         <a class='dropdown-toggle' data-toggle='dropdown'
+            href='#'>iPhone<span class='caret'></span></a>
+         <ul class='dropdown-menu'>
+            <li><a href='#'>iPhoneX</a></li>
+            <li><a href='#'>iPhone8</a></li>
+            <li><a href='#'>iPhone+</a></li>
+         </ul>
+      </li>
+   </ul>
+
+   <h3>Centered</h3>
+   <ul class='nav nav-tabs nav-justified'>
+      <li class='active'><a href='#'>Home</a></li>
+      <li><a href='#'>Menu1</a></li>
+      <li><a href='#'>Menu2</a></li>
+      <li><a href='#'>Menu3</a></li>
+   </ul>
+   <br>
+   <ul class='nav nav-pills nav-justified'>
+      <li class='active'><a href='#'>Home</a></li>
+      <li><a href='#'>Menu1</a></li>
+      <li><a href='#'>Menu2</a></li>
+      <li><a href='#'>Menu3</a></li>
+   </ul>
+
+</div>
+</body>
+</html>
+
+<!--
+tabs are created with <ul class='nav nav-tabs'>:
+also mark the current page with <li class='active'>.
+Pills are created with <ul class='nav nav-pills'>.
+also mark the current page with <li class='active'>
+to make the tabs toggleable, add the data-toggle='tab' attribute to each link.
+then add a .tab-pane class with a unique ID for every tab and wrap them
+inside a <div> element with class .tab-content.
+if you want the tabs to fade in and out when clicking on them, add the
+.fade class to .tab-pane
+-->

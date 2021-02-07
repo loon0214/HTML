@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<title>Bootstrap</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/1.1.3/sweetalert.min.css" />
+<script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/1.1.3/sweetalert.min.js"></script>
+<script>
+   function alert1() {
+      swal("message");
+   }
+
+   function alert2() {
+      swal("message", "blah blah blah..");
+   }
+
+   function alert3() {
+      swal("message", "explanation", "success");
+   }
+
+   function alert4() {
+      swal({
+         title: "will you delete?",
+         text: "deleted files will not be recovered.",
+         type: "warning",
+         showCancelButton: true,
+         cancelButtonText: "nie",
+         confirmButtonText: "tak",
+         closeOnConfirm: false
+      },
+      function() {
+         swal("성공", "the fiels has been deleted.", "success");
+      });
+   }
+
+   function alert5(){
+     swal({
+       title:"will you delete ?",
+       text:"deleted files will not be recovered",
+       type:'warning',
+       showCancelButton:true,
+       cancelButtonText:'nie',
+       confirmButtonText:"tak",
+       closeOnConfirm:false,
+       closeOnCancel:false
+     },
+function(isConfirm){
+  if(isConfirm){
+    swal("성공","the file has been deleted","success");
+  }else{
+    swal("취소",'the files are preseved','error');
+    }
+  });
+}
+</script>
+</head>
+<body>
+   <div class="container">
+      <h2>Sweet Alert</h2>
+      <button class="btn btn-default" onClick="alert(메시지)">javascript</button>
+      <button class="btn btn-primary" onClick="alert1()">basic</button>
+      <button class="btn btn-info" onClick="alert2()">explain</button>
+      <button class="btn btn-success" onClick="alert3()">success</button>
+      <button class="btn btn-warning" onClick="alert4()">delete</button>
+      <button class="btn btn-danger" onClick="alert5()">confirm</button>
+   </div>
+</body>
+</html>
